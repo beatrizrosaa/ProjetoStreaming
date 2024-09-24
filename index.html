@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forUflix.com</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit&display=swap" rel="stylesheet">
+</head>
+<body>
+    <barra>
+        <div class="logo">forUflix</div> <!--editar o nome do site-->
+        <div class="links">
+            <ul class="itensDaBarra">
+                <li><button id="pesquisar"><img class="imagem1" src="images/lupapesquisa.png" alt="Buscar" width="20px"></button></li>
+                <div id="buscar" class="buscar" style="display:none;">
+                    <input type="text" id="textoDigitado" placeholder="Digite o nome do filme">
+                  </div>
+                <li><a href="http://127.0.0.1:5500/projeto/index.html">Início</a></li>
+                <li><a href="http://127.0.0.1:5500/projeto/series.html" target="_self">Séries</a></li>
+                <li><a href="/filmes">Filmes</a></li>
+                <li><a href="/recentes">Adicionados recentemente</a></li>
+                <li><a href="/minhalista">Minha lista</a></li>
+                <li><button id="perfil"><img class="imagem2" src="images/perfilNetflix.png" alt="Perfil" width="25px"></button></li>
+            </ul>
+        </div>
+    </barra>
+    <topo>
+        <img class="imagem3" src="images/seriePrincipal.jpg" alt="B99" width="1530">
+        <div class="botoes">
+            <button id="trailer"><img class="imagem4" src="images/play.png" width="20px">    Trailer</button> <!--abrir popup-->
+            <button id="lista">+ Minha Lista</button>
+        </div>
+
+        <div class="popup" id="popup">
+            <div class="caixa1">
+                <button id="fechar1">x</button>
+                <video id="videoTrailer" src="images/trailer.mp4" controls></video>
+            </div>
+        </div>
+
+        <div class="popup2" id="popup2">
+            <div class="caixa2">
+                <button id="fechar2">x</button>
+                <h2>Adicionado com sucesso!</h2>
+            </div>
+        </div>
+
+    </topo>
+    <div class="series">
+        <h1 id="titulo">Séries</h1>
+        <ul class="posteres">
+            <li><button class="filme" id="friends"><img class="imagem5" src="images/friends.jpg" alt="Friends" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem6" src="images/theOffice.png" alt="The Office" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem7" src="images/greysAnatomy.jpg" alt="Greys Anatomy" width="500px"></button></li>
+        </ul>
+
+        <div class="popup3" id="popup3">
+            <div class="caixa3">
+                <button id="fechar3">x</button>
+                <img class="friendsimagem" src="images/friends2.jpg" width="370px">
+                <h2>Friends</h2>
+                <p class="p1">1994 - 2004 | Comédia<br></p>
+                <p class="p2">Criado por: David Crane, Marta Kauffman<br></p>
+                <p class="p3">Elenco: Jennifer Aniston, Courteney Cox, Lisa Kudrow<br></p>
+                <p><br></p>
+                <p class="p4">Sinopse: Seis jovens são unidos por laços familiares, românticos e, principalmente, de amizade, enquanto tentam vingar em Nova York. Rachel é a garota mimada que deixa o noivo no altar para viver com a amiga dos tempos de escola Monica, sistemática e apaixonada pela culinária. Monica é irmã de Ross, um paleontólogo que é abandonado pela esposa, que descobriu ser lésbica. Do outro lado do corredor do apartamento de Monica e Rachel, moram Joey, um ator frustrado, e Chandler, de profissão misteriosa. A turma é completa pela exótica Phoebe. <br></p>
+                <p><br></p>
+                <p class="p5">10 temporadas | 236 espisódios<br></p>
+            </div>
+        </div>
+
+    </div>
+    <div class="famosos">
+        <h1 id="titulo">Mais Assistidos</h1>
+        <ul class="posteres">
+            <li><button class="filme"><img class="imagem8" src="images/oppenheimer.jpg" alt="Oppenheimer" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem9" src="images/friosNosOssos.png" alt="Frio nos Ossos" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem10" src="images/alertaMaximo.jpg" alt="Alerta Máximo" width="500px"></button></li>
+        </ul>
+    </div>
+    <div class="comedia">
+        <h1 id="titulo">Comédia</h1>
+        <ul class="posteres">
+            <li><button class="filme"><img class="imagem11" src="images/ruimPraCachorro.jpg" alt="Ruim pra Cachorro" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem12" src="images/meuPaiÉUmPerigo.jpg" alt="Meu Pai é um Perigo" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem13" src="images/fugaDasGalinhas.png" alt="Fuga das Galinhas" width="500px"></button></li>
+        </ul>
+    </div>
+    <div class="romance">
+        <h1 id="titulo">Romance</h1>
+        <ul class="posteres">
+            <li><button class="filme"><img class="imagem14" src="images/after.png" alt="After" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem15" src="images/pequenaSereia.jpg" alt="A Pequena Sereia" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem16" src="images/amorMandouMensagem.jpg" alt="O Amor Mandou Mensagem" width="500px"></button></li>
+        </ul>
+    </div>
+    <div class="animacao">
+        <h1 id="titulo">Animações</h1>
+        <ul class="posteres">
+            <li><button class="filme"><img class="imagem17" src="images/homemAranha.jpg" alt="O Homem Aranha Através do Aranha-verso" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem18" src="images/elementos.png" alt="Elementos" width="500px"></button></li>
+            <li><button class="filme"><img class="imagem19" src="images/mario.jpg" alt="Super Mario Bross" width="500px"></button></li>
+        </ul>
+    </div>
+    <h2 id="avaliacao">Faça sua avaliação:</h2>
+    <div class="form-container">
+        <form id="pesquisa">
+          <label for="filme">Filme/Série:</label>
+          <input type="text" id="filme" placeholder="Digite o nome do filme" required><br>
+    
+          <label for="nome">Classificação:</label>
+          <button type="button" class="botaocolorido" id="umaEstrela">&nbsp;</button>
+          <button type="button" class="botaocolorido" id="duasEstrelas">&nbsp;</button>
+          <button type="button" class="botaocolorido" id="tresEstrelas">&nbsp;</button>
+          <button type="button" class="botaocolorido" id="quatroEstrelas">&nbsp;</button>
+          <button type="button" class="botaocolorido" id="cincoEstrelas">&nbsp;</button><br>
+    
+          <label for="comentarios">Comentários:</label>
+          <input type="text" id="comentarios" placeholder="Faça sua avaliação..." required><br>
+    
+          <button type="button" id="buttonReview">Ver Review</button>
+        </form>
+      </div>
+     
+      <div class="review">
+        <h2>REVIEW</h2>
+        <table id="tabela">
+            <tr> 
+                <th>Filme/Série</th>
+                <th>Estrelas</th>
+                <th>Avalição</th>
+              </tr>
+              
+        </table>
+      </div>
+
+      <script src="projeto.js"></script>
+</body>
+</html>

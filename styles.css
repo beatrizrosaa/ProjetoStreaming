@@ -1,0 +1,359 @@
+html{
+    overflow: auto;
+    background-color: #373737;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+barra{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 25px;
+    color: red;
+}
+
+.itensDaBarra{
+    list-style: none;
+    display: flex;
+}
+
+.itensDaBarra>li>a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#pesquisar{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#perfil{
+    margin-left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#trailer{
+    width: 170px;
+    height: 60px;
+    font-size: 30px;
+    position: relative;
+    top: -140px;
+    left: 1070px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#lista{
+    width: 230px;
+    height: 60px;
+    font-size: 30px;
+    position: relative;
+    top: -140px;
+    left: 1085px;
+    border-radius: 5px;
+    color: white;
+    background-color: #373737;
+    cursor: pointer;
+}
+
+#titulo{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top: -35px;
+    left: 10px;
+}
+
+.posteres{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: -30px;
+}
+
+.filme{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/*popup trailer*/
+
+.popup{
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.caixa1{
+    background-color: #1F1F1F;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    width: 1250px;
+}
+
+.popup.show{
+    pointer-events: all;
+    opacity: 1;
+    z-index: 1000;
+}
+
+.popup.show video{
+    transform: scale(1);
+}
+
+#fechar1{
+    position: relative;
+    top: -10px;
+    left: 1250px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+video{
+    width: 15000px;
+    max-width: 1200px;
+    transform: scale(0);
+    outline: none;
+    transition: all 0.3s;
+}
+
+/*popup adicionado a lista*/
+
+.popup2{
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.caixa2{
+    background-color: #1F1F1F;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    width: 500px;
+    height: 150px;
+}
+
+.caixa2 h2{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+.popup2.show{
+    pointer-events: all;
+    opacity: 1;
+    z-index: 1000;
+}
+
+
+#fechar2{
+   position: relative;
+    top: -5px;
+    left: 450px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/*popup série*/
+.popup3{
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.caixa3{
+    background-color: #1F1F1F;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+    padding: 15px 25px;
+    width: 900px;
+    height: 600px;
+}
+
+.friendsimagem{
+    margin-top: 5px;
+}
+
+.caixa3 h2{
+    margin-top: -550px;
+    margin-left: 420px;
+    font-size: 70px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+}
+
+.caixa3 p{
+    margin-left: 420px;
+    font-family: 'Kanit', sans-serif;
+    color: white;
+
+}
+
+.caixa3 p.p4{
+    text-align: justify;
+}
+
+.popup3.show{
+    pointer-events: all;
+    opacity: 1;
+    z-index: 1000;
+}
+
+
+#fechar3{
+   position: relative;
+    top: -550px;
+    left: 850px;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+/*avaliação*/
+#avaliacao{
+    font-family: 'Kanit', sans-serif;
+    font-size: 40px;
+    color: white;
+    position: relative;
+    left: 40px;
+}
+
+#pesquisa{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 40px;
+     
+}
+
+.botaocolorido {
+    width: 30px; /* Ajuste o tamanho conforme necessário */
+    height: 30px;
+    background-color: #FFFFFF; /* Cor de fundo inicial */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+
+
+#filme{
+    font-size: 15px;
+    position: relative;
+    border-radius: 30px;
+    border: none;
+    
+}
+
+#comentarios{
+    font-size: 15px;
+    position: relative;
+    border-radius: 30px;
+    border: none;
+    
+}
+
+#buttonReview{
+    font-family: 'Kanit', sans-serif;
+    font-size: 15px;
+    position: relative;
+    border-radius: 40px;
+    border: none;
+    left: 80px;
+    left: 40px;
+}
+
+.review{
+    font-family: 'Kanit', sans-serif;
+    font-size: 25px;
+    color: white;
+    position: relative;
+    left: 800px;
+    top: -160px;
+    
+}
+
+#tabela{
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    color: white;
+    position: relative;
+    
+}
+
+#tabela th {
+    padding-right: 20px; 
+}
+
+
+/*botao pesquisar */
+
+.buscar {
+    font-size: 15px;
+    position: relative;
+    border-radius: 30px;
+    border: none;
+}
+ 

@@ -1,0 +1,53 @@
+html{
+    overflow: auto;
+    background-color: #373737;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+barra{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Kanit', sans-serif;
+    align-items: center;
+    background-color: #1F1F1F;
+    color: white;
+}
+
+.logo{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: 800;
+    font-size: 25px;
+    color: red;
+}
+
+.itensDaBarra{
+    list-style: none;
+    display: flex;
+}
+
+.itensDaBarra>li>a{
+    padding-left: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+
+#pesquisar{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#perfil{
+    margin-left: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
